@@ -1,20 +1,14 @@
 .m-social-list{
   height: 50px;
-  display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  display: none;
   position: fixed;
   bottom: 0px;
   right: 0px;
   padding: 22px;
   background: white;
   z-index: 9;
-
-  @include breakpoint($bp-tablet){
-    display: flex;
-  }
+  display: flex;
 
   @include breakpoint($bp-laptop){
     height: 78px;

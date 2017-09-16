@@ -28,5 +28,17 @@
 
   &__buttons{
     margin: 24px 0px 0px 0px;
+
+    a{
+      margin: 12px 0px 0px 0px;
+      display: block;
+      width: 100%;
+
+      @include breakpoint($bp-tablet){
+        display: inline-block;
+        width: auto;
+        margin: 0;
+      }
+    }
   }
 }

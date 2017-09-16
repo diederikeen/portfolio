@@ -1,0 +1,32 @@
+.m-main-header{
+  position: relative;
+  z-index: 3;
+  height: 50px;
+  border-bottom: 1px solid rgba($c-grey-2 ,.5);
+
+  @include breakpoint($bp-laptop){
+    height: 80px;
+  }
+
+  &:before{
+    content: '';
+    height: 2px;
+    width: 100%;
+    display: block;
+    @include linear-gradient(-45deg, #4183D7, #19B5FE, #9B59B6);
+  }
+
+  &__title{
+    position: relative;
+    top: 60px;
+  }
+
+  .e-burger-button{
+    float: right;
+    margin: 0px 0px 4px 0px;
+  }
+
+  .m-social-list{
+    float: left;
+  }
+}

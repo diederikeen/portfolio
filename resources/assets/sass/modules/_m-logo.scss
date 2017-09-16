@@ -1,0 +1,31 @@
+.m-logo{
+  background-color: #222;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  z-index: 9;
+  text-align: center;
+  font-family: 'OpenSansSemiBold';
+  font-size: 16px;
+  position: absolute;
+  left: 0px;
+  top: -2px;
+  transition: $s-fast ease;
+  transition-property: background, transform;
+
+  @include breakpoint($bp-laptop){
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 15px;
+    float: left;
+  }
+
+  &:hover{
+    background-color: rgba(#222,.8);
+    transform: translateY(-1px);
+  }
+}

@@ -1,0 +1,38 @@
+.m-about-content{
+  padding: 64px 0px 0px 0px;
+
+  @include breakpoint($bp-laptop){
+    padding: 120px 0px 0px 0px;
+  }
+
+  &__title{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0px 0px 6px 0px;
+
+    &:not(:first-child){
+      margin: 64px 0px 6px 0px;
+
+      @include breakpoint($bp-laptop){
+        margin: 120px 0px 6px;
+      }
+    }
+  }
+
+  &__content{
+
+    @include breakpoint($bp-laptop){
+      width: 75%;
+    }
+
+    p{
+      margin: 0px 0px 20px 0px;
+    }
+
+    &:after{
+      content: '';
+      clear: both;
+      display: table;
+    }
+  }
+}

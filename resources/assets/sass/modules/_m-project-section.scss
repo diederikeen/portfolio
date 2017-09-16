@@ -1,0 +1,119 @@
+.m-project-section{
+	margin: 64px 0px 0px 0px;
+
+	&:after{
+		content:'';
+		clear: both;
+		display: table;
+	}
+
+	&__content-wrap{
+
+		@include breakpoint($bp-tablet){
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__content{
+
+		@include breakpoint($bp-tablet){
+			float: left;
+			width: 50%;
+			flex-shrink: 0;
+		}
+
+		&:last-of-type{
+
+			@include breakpoint($bp-tablet){
+				padding: 0px 0px 0px 40px;
+			}
+		}
+
+		&--text{
+			@include breakpoint($bp-laptop){
+				display:flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+		}
+
+		.e-button-primary{
+			margin: 24px 0px 0px 0px;
+
+			@include breakpoint($bp-tablet){
+				margin: 32px 0px 0px 0px;
+			}
+		}
+	}
+
+	&__image-wrap{
+		padding: 0px 0px 56.2% 0px;
+		overflow: hidden;
+		position: relative;
+		box-shadow: 0px 2px 4px rgba($black,.2);
+		transition: all $s-fast ease;
+
+		&.scrollable{
+			overflow: scroll;
+			box-shadow: 0px 4px 6px rgba($black,.2);
+			transform: translateY(-2px) scale(1.1);
+		}
+	}
+
+	&__button{
+		transform: rotate(-5deg);
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		z-index: 7;
+		display: none;
+
+		@include breakpoint($bp-tablet){
+			display: block;
+		}
+
+		&:hover{
+			cursor: pointer;
+			
+			svg{
+				animation-play-state: paused;
+			}
+		}
+
+		&.hidden{
+			display: none;
+		}
+	}
+
+	&__svg{
+		height: 24px;
+		width: 24px;
+		animation: pulse 1000ms infinite;
+
+		&[data-fill="white"]{
+			fill: white;
+		}
+	}
+
+	&__image{
+		width:100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	&__title{
+		margin: 24px 0px 0px 0px;
+
+		@include breakpoint($bp-tablet){
+			margin: 0px 0px 12px 0px;
+		}
+	}
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1.0); }
+  50%   { transform: scale(1.2); }
+  0%   { transform: scale(1.0); }
+}

@@ -1,0 +1,28 @@
+.e-animate{
+
+	@include breakpoint($bp-tablet){
+
+		&[data-animation="fade-in"]{
+			opacity: 0;
+			transition: all 1s ease;
+		}
+
+		&[data-animation="fade-in-up"]{
+			opacity: 0;
+			position: relative;
+			transform: translateY(25px) skew(1.5deg, 1.5deg);
+			transition: all 800ms ease;
+		}
+
+		&--done{
+			&[data-animation="fade-in"]{
+				opacity: 1;
+			}
+
+			&[data-animation="fade-in-up"]{
+				opacity: 1;
+				transform: translateY(0) skew(0, 0);
+			}
+		}
+	}
+}

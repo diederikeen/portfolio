@@ -1,0 +1,27 @@
+.e-burger-button{
+  width: 44px;
+  height: 44px;
+  position: relative;
+  z-index: 3;
+  padding: 0px;
+
+  @include breakpoint($bp-laptop){
+    display: none;
+  }
+
+  span{
+    width: 80%;
+    margin: 0px auto;
+    height: 3px;
+    position: relative;
+    display: block;
+    background: $c-primary;
+    transition: $s-fast ease;
+    transition-property: transform, opacity;
+    border-radius: 4px;
+
+    &:nth-child(2){
+      margin: 6px auto;
+    }
+  }
+}

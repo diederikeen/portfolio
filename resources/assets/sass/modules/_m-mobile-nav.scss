@@ -1,0 +1,37 @@
+.m-mobile-nav{
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  background-color: white;
+  z-index: 2;
+  width: 100vw;
+  bottom: 0px;
+  left: 0;
+  position: fixed;
+  // padding: 54px 0px 0px 0px;
+
+  @include breakpoint($bp-laptop){
+    display: none;
+  }
+
+  &__list{
+    padding: 54px 0px 0px 18px;
+    list-style-type: none;
+  }
+
+  &__item{
+    position: relative;
+    transform: translateX(-20px);
+    opacity: 0;
+    transition: $s-fast ease;
+    transition-property: opacity, transform;
+  }
+
+  &__anchor{
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: $c-primary;
+  }
+}

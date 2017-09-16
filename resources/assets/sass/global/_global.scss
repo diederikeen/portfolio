@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: $f-body;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $f-header;
+  font-weight: normal;
+  margin: 0px;
+}
+
+a{
+  transition: $s-fast color ease;
+}
+
+p {
+  color: #222;
+  font-size: 18px;
+  line-height: 24px;
+
+  a:not([class]){
+    color: #4183D7;
+    text-decoration: underline;
+    font-family: 'OpenSansSemiBold';
+    letter-spacing: -0.5px;
+    transition: opacity $s-fast ease;
+
+    &:hover{
+      opacity: .7;
+    }
+  }
+}
+
+strong {
+  font-family: 'OpenSansSemiBold';
+  letter-spacing: -0.5px;
+}
+
+.lazy-load{
+  opacity: 0;
+  transition: opacity $s-fast ease;
+
+  &.lazy-loaded{
+    opacity: 1;
+  }
+}

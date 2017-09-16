@@ -1,0 +1,32 @@
+.m-intro{
+  padding: 64px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+
+  @include breakpoint($bp-laptop){
+    padding: 120px 0px 0px 0px;
+  }
+
+  &__paragraph{
+    margin: 0px 0px 20px 0px;
+
+    &:last-child{
+      margin: 0;
+    }
+
+    @include breakpoint($bp-laptop){
+      width: 80%;
+    }
+
+    @include breakpoint($bp-desktop){
+      max-width: 60%;
+    }
+  }
+
+  &__buttons{
+    margin: 24px 0px 0px 0px;
+  }
+}

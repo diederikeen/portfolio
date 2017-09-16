@@ -1,0 +1,40 @@
+.is-mobile-open{
+
+  //animate button
+  .e-burger-button{
+
+    span{
+
+      &:nth-child(1){
+        transform: rotate(45deg);
+        top: 10px;
+      }
+
+      &:nth-child(3){
+        transform: rotate(-45deg);
+        top: -8px;
+      }
+
+      &:nth-child(2){
+        transform: translateX(-30px);
+        opacity: 0;
+      }
+    }
+  }
+
+  //display nav
+  .m-mobile-nav{
+    opacity: 1;
+    visibility: visible;
+    height: calc(100vh - 50px);
+    z-index: 8;
+    background: white;
+
+    //animate items
+    &__item{
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+}

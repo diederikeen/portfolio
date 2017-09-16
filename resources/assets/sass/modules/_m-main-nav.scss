@@ -1,0 +1,45 @@
+.m-main-nav{
+  padding: 30px 0px;
+  float: right;
+  display: none;
+
+  @include breakpoint($bp-laptop){
+    display: block;
+  }
+
+  &__list{
+    position: relative;
+
+    &:after{
+      content: '';
+      clear: both;
+      display: table;
+    }
+  }
+
+  &__item{
+    float: left;
+  }
+
+  &__anchor{
+    font-family: 'OpenSansSemiBold';
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: $s-fast opacity ease;
+    color: $c-primary;
+    padding: 0px 10px;
+
+    &:hover{
+      opacity: .7;
+    }
+
+    &.current{
+      color: $black;
+    }
+
+    &.blocked{
+      cursor: not-allowed;
+    }
+  }
+}

@@ -9,7 +9,7 @@
 		font-size: 46px;
 		margin: 0px 0px 18px;
 
-		@include breakpoint($bp-mobile){
+		@include breakpoint($bp-tablet){
 		  font-size: 52px;
 		}
 	}
@@ -17,12 +17,21 @@
 	&__paragraph{
 	  margin: 0px 0px 20px 0px;
 
-	  &:last-child{
-	    margin: 0;
+	  color: rgba($black, .8);
+	  font-size: 16px;
+	  line-height: 22px;
+
+	  @include breakpoint($bp-tablet){
+	    font-size: 21px;
+	    line-height: 32px;
 	  }
 
 	  @include breakpoint($bp-laptop){
 	    width: 80%;
+	  }
+
+	  &:last-child{
+	    margin: 0;
 	  }
 	}
 }

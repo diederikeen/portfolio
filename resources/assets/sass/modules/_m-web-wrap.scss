@@ -3,4 +3,6 @@
 	max-height: 100vh;
 	padding: 0px 0px 80px 0px;
 	overflow: scroll;
+	scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }

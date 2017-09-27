@@ -10,8 +10,25 @@
     padding: 120px 0px 0px 0px;
   }
 
+  &__title{
+    font-size: 46px;
+    margin: 0px 0px 18px;
+
+    @include breakpoint($bp-tablet){
+      font-size: 52px;
+    }
+  }
+
   &__paragraph{
     margin: 0px 0px 20px 0px;
+    color: rgba($black, .8);
+    font-size: 16px;
+    line-height: 22px;
+
+    @include breakpoint($bp-tablet){
+      font-size: 21px;
+      line-height: 32px;
+    }
 
     &:last-child{
       margin: 0;
@@ -29,10 +46,18 @@
   &__buttons{
     margin: 24px 0px 0px 0px;
 
+    @include breakpoint($bp-tablet){
+      margin: 32px 0px 0px 0px;
+    }
+
     a{
       margin: 12px 0px 0px 0px;
       display: block;
       width: 100%;
+
+      &:first-child{
+        margin: 12px 8px 0px 0px;
+      }
 
       @include breakpoint($bp-tablet){
         display: inline-block;

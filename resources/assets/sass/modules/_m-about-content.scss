@@ -6,6 +6,15 @@
   }
 
   &__title{
+    font-size: 46px;
+    margin: 0px 0px 18px;
+
+    @include breakpoint($bp-tablet){
+      font-size: 52px;
+    }
+  }
+
+  &__subtitle{
     font-size: 16px;
     text-transform: uppercase;
     margin: 0px 0px 6px 0px;
@@ -27,6 +36,15 @@
 
     p{
       margin: 0px 0px 20px 0px;
+
+      color: rgba($black, .8);
+      font-size: 16px;
+      line-height: 22px;
+
+      @include breakpoint($bp-tablet){
+        font-size: 21px;
+        line-height: 32px;
+      }
     }
 
     &:after{

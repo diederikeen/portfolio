@@ -3,7 +3,7 @@ var SetImageScroll = function(){
 	var buttons;
 
 	var _init = function(){
-		buttons = document.getElementsByClassName('m-project-section__button');
+		buttons = document.getElementsByClassName('m-project-section__image');
 
 		[].map.call(buttons, function(button){
 			button.addEventListener('click', _makeImageScrollable);
@@ -11,9 +11,7 @@ var SetImageScroll = function(){
 	};
 
 	var _makeImageScrollable = function(e){
-		var button = e.currentTarget;
-		button.classList.add('hidden');
-		button.parentNode.classList.add('scrollable');
+		e.currentTarget.parentNode.classList.toggle('scrollable');
 	};
 
 	return {

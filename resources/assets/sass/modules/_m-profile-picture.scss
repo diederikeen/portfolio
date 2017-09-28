@@ -1,0 +1,11 @@
+.m-profile-picture{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: none;
+  opacity: .3;
+
+  @include breakpoint($bp-tablet){
+    display: block;
+  }
+}

@@ -35,12 +35,12 @@
   }
 
   &__title{
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
   }
 
   &__description{
-    font-size: 14px;
+    font-size: 16px;
     color: $c-grey-1;
     transition: color $s-fast ease;
   }

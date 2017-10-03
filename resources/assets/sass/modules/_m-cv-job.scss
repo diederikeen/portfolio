@@ -1,0 +1,54 @@
+.m-cv-job{
+	padding: 24px 0px 28px 0px;
+	border-bottom: 1px solid $c-primary;
+
+	&__content:after{
+		content: '';
+		clear: both;
+		display: table;
+	}
+	
+	&__company-name{
+		font-size: 14px;
+		float: left;
+		font-family: 'OpenSansSemiBold';
+
+		@include breakpoint($bp-tablet){
+			font-size: 16px;
+		}
+	}
+
+	&__company-function{
+		font-size: 18px;
+		margin: 6px 0px 0px 0px;
+
+		@include breakpoint($bp-tablet){
+			font-size: 21px;
+		}
+	}
+
+	&__company-time-span{
+		float: right;
+		font-size: 14px;
+		font-family: 'OpenSansSemiBold';
+	}
+
+	&__description{
+		padding: 8px 0px;
+		
+		p{
+			font-size: 14px;
+			line-height: 19px;
+			margin: 0px 0px 12px;
+
+			&:last-of-type{
+				margin: 0;
+			}
+
+			@include breakpoint($bp-tablet){
+				font-size: 16px;
+				line-height: 21px;
+			}
+		}
+	}
+}

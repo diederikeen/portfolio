@@ -36,9 +36,16 @@
 @import './modules/m-work-list';
 //about
 @import './modules/m-about-content';
+@import './modules/m-profile-picture';
 //project
 @import './modules/m-project-intro';
 @import './modules/m-project-section';
+//cv
+@import './modules/m-cv';
+@import './modules/m-cv-header';
+@import './modules/m-cv-details';
+@import './modules/m-cv-jobs';
+@import './modules/m-cv-job';
 /*
   States
 */

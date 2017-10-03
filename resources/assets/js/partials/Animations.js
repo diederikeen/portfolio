@@ -44,4 +44,6 @@ var Animations = function(){
 	}
 }();
 
-window.onload = Animations.init()
+document.addEventListener("DOMContentLoaded", Animations.init);
+
+// window.onload = Animations.init()

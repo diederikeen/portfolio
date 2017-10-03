@@ -32,5 +32,16 @@
     text-transform: uppercase;
     font-weight: 800;
     color: $c-primary;
+    position: relative;
+
+    svg{
+      height: 12px;
+      width: 12px;
+      position: absolute;
+      left: 100%;
+      top: 6px;
+      transition: transform $s-fast ease;
+      margin: 0px 0px 0px 4px;
+    }
   }
 }

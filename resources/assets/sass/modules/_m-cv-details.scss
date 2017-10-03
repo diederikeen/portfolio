@@ -28,7 +28,11 @@
 
 		li{
 			float: left;
-			margin: 0px 24px 0px 0px;
+			margin: 0px 0px 6px 0px;
+
+			@include breakpoint($bp-tablet){
+				margin: 0px 24px 0px 0px;
+			}
 
 			svg{
 				width: 20px;

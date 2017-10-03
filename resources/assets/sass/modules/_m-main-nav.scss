@@ -29,17 +29,28 @@
     transition: $s-fast opacity ease;
     color: $c-primary;
     padding: 0px 10px;
+    position: relative;
 
     &:hover{
       opacity: .7;
+
+      svg{
+        transform: translateX(10px);
+      }
     }
 
     &.current{
       color: $black;
     }
 
-    &.blocked{
-      cursor: not-allowed;
+    svg{
+      height: 12px;
+      width: 12px;
+      position: absolute;
+      left: 100%;
+      top: 4px;
+      transition: transform $s-fast ease;
+      margin: 0px 0px 0px 4px;
     }
   }
 }

@@ -6,7 +6,6 @@ var NavigationActions = function(){
   var _init = function(){
     body = document.body;
     button = document.getElementById('toggleNav');
-
     button.addEventListener('click', _toggleNav);
   }
 
@@ -21,5 +20,6 @@ var NavigationActions = function(){
   }
 }();
 
-
-NavigationActions.init();
+if (document.getElementById('toggleNav')) {
+  NavigationActions.init();
+}

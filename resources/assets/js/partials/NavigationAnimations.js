@@ -23,4 +23,6 @@ var NavigationAnimations = function(){
   }
 }();
 
-NavigationAnimations.init();
+if (document.getElementById('mobileNav')) {
+  NavigationAnimations.init();
+}

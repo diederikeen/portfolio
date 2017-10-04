@@ -19,4 +19,6 @@ var SetImageScroll = function(){
 	}
 }();
 
-SetImageScroll.init();
+if (document.getElementsByClassName('m-project-section__image')) {
+	SetImageScroll.init();
+}

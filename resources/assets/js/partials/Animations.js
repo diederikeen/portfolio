@@ -1,4 +1,5 @@
 var _isInView = require('./Helpers').inview;
+
 var Animations = function(){
 	'use strict';
 	var _window = document.getElementById('wrapper');
@@ -45,5 +46,3 @@ var Animations = function(){
 }();
 
 document.addEventListener("DOMContentLoaded", Animations.init);
-
-// window.onload = Animations.init()

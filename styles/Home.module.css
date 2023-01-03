@@ -1,0 +1,215 @@
+.sectionHomeHeader {
+    min-height: 60vh;
+    padding: 16px 16px 32px;
+    position: relative;
+}
+
+.avatar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+    z-index: -1;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border: none;
+    height: 50px;
+    padding: 0 40px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.button:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform 174ms ease-out;
+    z-index: -1;
+    border-radius: 2px;
+}
+
+.button:focus:after {
+    transform: translate(2px, 2px);
+}
+
+.button:active:after {
+    transform: translate(2px, 2px);
+}
+
+.button:hover:after {
+    transform: translate(4px, 4px);
+}
+
+.toaster {
+    border-radius: 2px;
+    padding: 8px 16px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    max-width: 400px;
+    width: 90%;
+    border: 4px solid blue;
+    transform: translateX(-50%);
+    z-index: 3;
+    background-color: white;
+
+}
+
+.sectionHomeHeader p {
+    position: relative;
+    max-width: 670px;
+    z-index: 1;
+    background-color: rgba(255,255,255, .9);
+    padding: 8px;
+}
+
+.sectionHomeHeader .button {
+    margin-top: 24px;
+    margin-left: 8px;
+}
+
+.sectionTitle {
+    font-size: 48px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255,255,255, .9);
+    display: inline-block;
+}
+
+.sectionHomeHeader .sectionTitle {
+    background-color: rgba(255,255,255, .9);
+    padding: 8px;
+}
+
+.sectionExperience {
+    background-color: #e3eff3;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sectionExperience .sectionTitle {
+    background: none;
+}
+
+.sectionExperience p {
+    max-width: 670px;
+}
+
+.workExperience {
+    width: 100%;
+    max-width: 670px;
+    padding: 32px 0;
+}
+
+.workExperience:not(:last-child) {
+    border-bottom: 2px solid darkgray;
+}
+
+.workExperience header {
+    display: flex;
+    align-items: flex-end;
+}
+
+.workExperience h2 {
+    position: relative;
+    letter-spacing: 1px;
+}
+.workExperience h2:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: blue;
+}
+
+.workExperience time {
+    margin-left: 16px;
+    margin-bottom: 24px;
+}
+
+.workExperienceList {
+    margin-left: 32px;
+    list-style-type: disclosure-closed;
+}
+
+.workExperienceList > li:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.workExperienceStack {
+    font-size: 13px;
+    display: flex;
+    list-style-type: none;
+    font-style: italic;
+    flex-wrap: wrap;
+    transform: translateX(-8px);
+}
+
+.workExperienceStack li {
+    margin-bottom: 8px;
+    padding: 0 8px;
+}
+
+.sectionConnect {
+    padding: 16px 24px 48px 24px;
+}
+
+.sectionConnect p {
+    max-width: 670px;
+}
+
+.sectionConnect .button {
+    margin-top: 24px;
+}
+
+.sectionAbout {
+    padding: 16px 24px;
+}
+
+.sectionAbout p {
+    max-width: 670px;
+}
+
+.sectionAbout h3 {
+    margin: 32px 0;
+    letter-spacing: .5px;
+}
+
+@media screen and (min-width: 768px) {
+    .sectionHomeHeader {
+        padding: 32px 56px;
+    }
+
+    .sectionExperience,
+    .sectionAbout{
+        padding: 32px 64px;
+    }
+
+    .sectionConnect {
+        padding: 32px 64px 78px 64px;
+    }
+
+    .sectionHomeHeader .button,
+    .sectionConnect .button {
+        margin-top: 48px;
+    }
+
+    .toaster {
+        top: 24px;
+    }
+}
